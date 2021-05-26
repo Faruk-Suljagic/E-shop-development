@@ -21,18 +21,37 @@ const ImageSlider = (props) => {
     <div className="content">
       <Carousel {...settings}>
         <Wrap>
-          <a>
+          <a href="/#" className="img-text_overlay">
             <img src={decoration} alt="sale" />
+            <h1 className="slideShow clock">Contemporary Pendant Lighting</h1>
+
+            <span href="/#" className="overlayLink">
+              Interior
+            </span>
+            <span className="underline" />
           </a>
         </Wrap>
         <Wrap>
-          <a>
+          <a href="/#" className="img-text_overlay">
             <img src={interior} alt="sale" />
+            <h1 className="slideShow lights">
+              Minimal Rotating Disc Wall Clock
+            </h1>
+            <span href="/#" className="overlayLink">
+              Decoration
+            </span>
+            <span className="underline" />
           </a>
         </Wrap>
         <Wrap>
-          <a>
+          <a href="/#" className="img-text_overlay">
             <img src={basket} alt="sale" />
+            <h1 className="slideShow basket">Bamboo Zigzag Pattern Basket</h1>
+
+            <span href="/#" className="overlayLink">
+              Essentials
+            </span>
+            <span className="underline" />
           </a>
         </Wrap>
       </Carousel>
@@ -41,11 +60,10 @@ const ImageSlider = (props) => {
 };
 
 const Carousel = styled(Slider)`
-  margin-top: 20px;
+  margin: 20px 40px 0px 40px;
   overflow: hidden;
   & > button {
     opacity: 1;
-
     color: black;
     height: 100%;
     width: 8vw;
@@ -77,13 +95,13 @@ const Wrap = styled.div`
   border-radius: 4px;
   cursor: pointer;
   position: relative;
+  z-index: -1;
   a {
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
       rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     cursor: pointer;
     display: block;
-    position: relative;
     padding: 4px;
     img {
       width: 100%;

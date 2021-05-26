@@ -1,11 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./css/index.css";
 import App from "./App";
 
+import Details from "./layout/Details";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/product/:productId" component={Details} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

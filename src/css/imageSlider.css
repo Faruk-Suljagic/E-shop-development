@@ -1,6 +1,60 @@
-/* .content {
+.img-text_overlay {
+  position: relative;
+  height: 100%;
+}
+.clock,
+.lights,
+.basket {
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  margin: 0 auto;
-} */
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  width: 40%;
+  text-align: left;
+  top: 200px;
+  left: 100px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.basket,
+.clock {
+  color: #000;
+}
+.overlayLink {
+  font-size: 32px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  box-shadow: unset !important;
+  color: rgb(133, 133, 133);
+  cursor: pointer !important;
+  pointer-events: all;
+}
+.overlayLink:hover {
+  cursor: pointer !important;
+  pointer-events: all;
+}
+
+.underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 390px;
+  left: 100px;
+  width: 13%;
+  height: 2px;
+  background-color: rgb(133, 133, 133);
+  cursor: pointer !important;
+  pointer-events: none;
+}
+.underline:hover {
+  cursor: pointer !important;
+  pointer-events: all;
+}

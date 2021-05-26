@@ -1,0 +1,93 @@
+.ContainerStorage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin: 10% 0rem;
+  background-color: #fff;
+}
+.Image {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.Information {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0rem 2rem;
+}
+.productInfo {
+  background-color: rgb(219, 219, 219);
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+.makeItRow {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.makeItRow p {
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+}
+.borderRight {
+  border-right: 1px solid rgba(0, 0, 0, 0.627);
+}
+.borderTop {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.627);
+  padding: 10px 5px;
+}
+.borderTop h4 {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.borderTop p {
+  margin: 0;
+  font-weight: 100;
+}
+.orderButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0px;
+}
+.addToCartBtn {
+  width: 30%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: maroon;
+  background-color: rgb(210, 210, 210);
+  cursor: pointer;
+}
+.addToCartBtn:active {
+  transform: scale(1.1);
+}
+.noCursor {
+  cursor: not-allowed;
+  background-color: rgba(220, 220, 220, 0.641);
+  color: #000;
+  border: none;
+}
+.noCursor:active {
+  transform: none;
+}

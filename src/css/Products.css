@@ -26,6 +26,7 @@
   background-color: #fff;
   margin: 10px 15px;
   border-radius: 4px;
+  text-decoration: none;
 }
 .prodCard:hover {
   transform: scale(1.03);
